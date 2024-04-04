@@ -1,0 +1,28 @@
+.navegador{
+    background-color:aquamarine;
+}
+.seccion1{
+    background-color:rgba(214, 29, 16, 0.815);
+}
+
+.main{
+    background-color:rgb(138, 52, 160);
+}
+
+ul,li{
+    list-style: none;
+    display: inline-block;
+    
+}
+img{
+    width: 250px;
+    height: 600px;
+    padding: 10px;
+}
+h1,h3{
+    text-decoration: underline;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
