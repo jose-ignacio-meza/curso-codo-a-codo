@@ -1,15 +1,31 @@
 .navegador{
-    background-color:aquamarine;
+    background-color:rgb(74, 111, 212);
+    display: flex;
+    justify-content: flex-end;
+    padding-right:20px;
+    padding-top: 20px;
+    margin-bottom:10px;
+    -webkit-box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
+-moz-box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
+box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
 }
 .seccion1{
-    background-color:rgba(214, 29, 16, 0.815);
+    background-image: url("../imagenes/fondo.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.seccion1 h1{
+    padding-top: 30px;
+    padding-bottom: 100px;
+    color: rgb(61, 71, 209);
+}
+.seccion1 h2{
+    color: rgb(156, 11, 11);
 }
 .navegador ul,li{
-    list-style: none; display: inline-block;
-}
-.recomendaciones h2{
-    background-color:rgb(138, 52, 160);
-    color:rgb(243, 75, 33);
+    list-style: none;
+    display: inline-block;
 }
 
 img{
@@ -17,13 +33,44 @@ img{
     height: 600px;
     padding: 10px;
 }
-h1,h3{
-    text-decoration: underline;
-}
 
 h1,h2,h3{
     text-align: center;
 }
+.destacadas{
+    padding-bottom:100px;
+    padding-top:60px;
+}
+.recomendaciones {
+    padding-bottom:100px;
+    padding-top:30px;
+}
+.recomendaciones h2{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(138, 52, 160);
+    color:white;
+    border-radius: 15px;
+    font-style: oblique;
+}
+
+.recientes {
+    padding-bottom:100px;
+    padding-top:30px;
+}
+.recientes h2{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(138, 52, 160);
+    color:white;
+    border-radius: 15px;
+    font-style: oblique;
+}
+
 footer{
     width:100%;
     height: 150px;
