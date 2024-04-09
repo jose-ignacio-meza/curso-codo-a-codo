@@ -1,27 +1,46 @@
 .navegador{
     background-color:rgb(74, 111, 212);
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     padding-right:20px;
     padding-top: 20px;
     margin-bottom:10px;
     -webkit-box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
--moz-box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
-box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
+    -moz-box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
+    box-shadow: 0px 10px 5px 5px rgba(117,111,117,1);
 }
 .seccion1{
-    background-image: url("../imagenes/fondo.jpg");
+    background-image: url("../imagenes/fondo_logo.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    height: 600px;
+    z-index:0;
+    height: 500px;
+}
+.logo{
+    padding-top:60px;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    position: relative;
+    color:white;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
 }
 .seccion1 h1{
-    padding-top: 30px;
-    padding-bottom: 100px;
-    color: rgb(61, 71, 209);
+    font-size: 70px;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+    font: oblique bold cursive;
 }
 .seccion1 h2{
-    color: rgb(156, 11, 11);
+    font-size: 20px;
+    color: black;
+    font: small-caps 100%/200% serif;
 }
 .navegador ul,li{
     list-style: none;
@@ -45,6 +64,10 @@ h1,h2,h3{
     padding-bottom:100px;
     padding-top:30px;
 }
+
+.card:hover img {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.card {overflow:hidden;}
+
 .recomendaciones h2{
     height: 100px;
     display: flex;
