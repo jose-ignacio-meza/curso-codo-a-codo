@@ -17,8 +17,13 @@ nav{
     position: fixed;
 }
 
-nav ul li h2{
+nav ul li h2 a{
     color:white;
+    font-size:20px;
+}
+nav ul li h2 a{
+    text-decoration: none;
+
 }
 
 .navegador{
@@ -31,13 +36,13 @@ nav ul li h2{
     margin-bottom:10px;
     background: linear-gradient(287deg,#7be1e9,#437bf3,#748bde,#b1447c,#805cec);
     background-size: 300% 300%;
-    animation: gradient-animation 15s ease infinite;
+    animation: animacion-gradiante 15s ease infinite;
     -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.46);
     -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.46);
     box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.46);
 }
   
-  @keyframes gradient-animation {
+  @keyframes animacion-gradiante {
     0% {
       background-position: 0% 50%;
     }
