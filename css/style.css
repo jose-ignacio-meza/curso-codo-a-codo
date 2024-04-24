@@ -62,8 +62,14 @@ nav ul li h2 a{
     height: 600px;
 }
 
-.card:hover img {-webkit-transform:scale(1.3);transform:scale(1.2);}
-.card {overflow:hidden;}
+.card:hover img {
+    -webkit-transform:scale(1.3);
+    transform:scale(1.2);
+}
+
+.card {
+    overflow:hidden;
+}
 
 .logo{
     padding-top:60px;
@@ -169,12 +175,13 @@ nav .logo{
 }
 
 .recientes {
-    padding-bottom:140px;
+    padding-bottom:100px;
     padding-top:30px;
+    
 }
 .recientes h2{
     height: 100px;
-    margin-bottom:80px;
+    margin-bottom:100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,6 +191,21 @@ nav .logo{
     font-style: oblique;
     animation-duration: 2s;
     animation-name: deslizarIzquierda;
+}
+.recientes-contenedor{
+    padding: 10px;
+    border: solid 1px black;
+    border-bottom-width: 0;
+    border-radius: 15px;
+    display: flex;
+    height: 650px;
+    width:1000px;
+    overflow-x:scroll;
+}
+
+.card-reciente:hover img {
+    -webkit-transform:scale(1.3);
+    transform:scale(0.9);
 }
 
 @keyframes deslizarIzquierda {
