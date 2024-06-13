@@ -1,0 +1,47 @@
+.contenedorFormularioRegistroPeliculas{
+    width: 100%;
+    height:1000px;
+    background-image: url(../imagenes/fondo_logo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formularioRegistroPeliculas{
+    width: 400px;
+    height: 900px;
+    border:solid 1px black;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.encabezadoRegistroPeliculas{
+    color:rgb(70, 64, 64);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:larger ;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+}
+
+.bloqueFormularioRegistroPeliculas{
+    margin-top:30px;
+}
+.inputFormularioRegistroPeliculas{
+    margin-top:20px;
+    display: flex;
+    width: 300px;
+}
+.textoFormularioRegistroPeliculas{
+    color:#2e1088;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botonesFormularioRegistroPeliculas{
+    margin-left: 20px;
+    margin-top: 80px;
+}
