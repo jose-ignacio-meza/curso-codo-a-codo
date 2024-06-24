@@ -11,8 +11,65 @@
     <title>Registrarse</title>
 </head>
 <body>
+    <?php 
+    if ($_POST){
+        $mensaje = "Complete el campo ";
+        $validar = true;
+        $nombre = $_POST["nombre"];
+        $apellido = $_POST["apellido"];
+        $celular = $_POST["celular"];
+        $localidad = $_POST["localidad"];
+        $email = $_POST["email"];
+
+        if( $nombre == ""){
+            $mensaje .= "de su nombre, ";
+            $validar = false;
+        }
+        if( $apellido == ""){
+            $mensaje .= "de su apellido, ";
+            $validar = false;
+        }
+        if( $celular == ""){
+            $mensaje .= "de su celular, ";
+            $validar = false;
+        }
+        if( $localidad == ""){
+            $mensaje .= "de su localidad, ";
+            $validar = false;
+        }
+        if( $email == ""){
+            $mensaje .= "de su email, ";
+            $validar = false;
+        }
+        if(!$validar){
+            echo '
+            <script>
+                Swal.fire({
+                icon: "error",
+                title: "Error",
+                text: "'.$mensaje.'"
+            });
+            </script>
+                ';   
+        } else {
+            echo '
+                <script>
+                    Swal.fire({
+                        icon: "success",
+                        title: "Éxito",
+                        text: "Registro de usuario exitoso! Te enviamos un mail con tus datos para ingresar"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = "index.html";
+                        }
+                    });
+                </script>
+                    ';
+        }
+        
+    } ?>
     <div class="contenedorFormularioRegistro">  
-        <form id="formularioRegistro" class="formularioRegistro">
+        <form id="formularioRegistro" class="formularioRegistro" method="POST">
             <div class="encabezadoRegistro">
                 <span> Complete con sus datos para registrarse</span>
             </div>   
@@ -40,13 +97,10 @@
                 <div class="botonesFormularioRegistro">
                     <button class="btn btn-primary" > <a href="index.html" style="text-decoration: none; color:white;"> Volver </a> </button>
                     <button class="btn btn-primary" > <a href="iniciarSesion.html" style="text-decoration: none; color:white;"> Ingresar </a> </button>
-                    <button class="btn btn-primary" type="submit" onClick="registrarse()"> Registrarse </button>
+                    <button class="btn btn-primary" type="submit"> Registrarse </button>
                 </div>
             </div>
         </form>
-    </div>   
-    
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="./script/registro.js"></script>
+    </div> 
 </body>
 </html>
