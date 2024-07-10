@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="contenedorFormulario">
-        <form id="formularioInicio" class="formularioInicio">
+        <form id="formularioInicio" onsubmit="validar()" class="formularioInicio">
             <div>
                 <div class=" bloqueFormulario">
                     <label class="textoFormulario">Usuario</label>

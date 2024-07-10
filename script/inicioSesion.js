@@ -1,5 +1,4 @@
 /*****************************Para Ingresar correctamente el usuario es :"usuario" y la contraseña es :"contra" ****************************************************/
-
 document.getElementById('formularioInicio').addEventListener('submit', function(event) {
     event.preventDefault()
 

@@ -21,11 +21,7 @@ fetch("https://rickandmortyapi.com/api/character")
             <img src="${elementos.image}">
             <div>
         `;
-
-
        contenedorPersonajes.append(contenedorCreado)
-
-
     });
 
 })
